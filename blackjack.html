@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Blackjack Project - Andrew Thomas BSc (Hons) - Experienced Software Deveoper</title>
+<meta name="description" content="The personal website of Andrew Thomas BSc (hons), a highly expreienced and motivated software developer and Computer Science with Business Management graduate. Blackjack final year software project." />
+<meta name="keywords" content="computer science, computer science graduate, first class graduate, first class computer science graduate, andrewthomas, andrew, thomas, agthomas, csbm, csbm graduate, blackjack, project, final year project, expected value, blackjack probability, card counting" />
+<meta name="copyright" content="Andrew Thomas 2024" />
+<meta name="author" content="Andrew Thomas" />
+<meta name="email" content="andrew &lt;at&gt; andrewthomas &lt;dot&gt; org &lt;dot&gt; uk" />
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/at.css" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/at.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3J88N917L8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3J88N917L8');
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> <img src="img/icon_sm.png" width="38" height="37"> </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archived <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="degree.html">Degree</a></li>
+                        <li class="active"><a href="blackjack.html">Blackjack</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div id="header" class="jumbotron">
+    <div class="container">
+        <h1>Andrew Thomas <span class="hidden-xs">BSc (Hons)</span></h1>
+        <p>Experienced <span class="hidden-xs">Senior</span> Software Developer<br>
+           First Class <span class="hidden-xs">Computer Science</span> Graduate</p>
+    </div>
+</div>
+
+    <div class="container" id="content">
+		<h1>The Project - A Multiplayer Blackjack Game</h1>
+		<p>During my final year at university I had to undertake a yearlong software development project. I chose to make a multiplayer Blackjack game as the topic seemed interesting but with many of the aspects being highly challenging.</p>
+		<p>This page aims to provide some information on the project and the results.</p>
+
+		<h2>The Game</h2>
+		<p>The aim of the project was to develop a substantial piece of software, following correct software engineering principles to come up with a good result. </p>
+		<p>The project started as a simple multiplayer Blackjack game but quickly evolved. As the project progressed it became clearer that a network multiplayer game, while impressive, would not stand up to the same level as some other ideas raised. This changed the course of the project into creating a local multiplayer Blackjack game - that is many players on a single PC - but with a host of extra facilities such as a tutorial mode to learn the game and card counting instructions to improve player skill.</p>
+		<p>A major consideration of the project was the GUI and making it all easy to use. The game needed to look great from the moment it was started in order to be better than the majority of existing games (at the time) which had very basic graphics. Therefore a logo and splash screen were created to show while the game loaded.</p>
+
+		<div class="center-img-caption">
+			<img src="img/bj_splash.png" alt="Image: The splash screen" width="300" height="180" />
+			<p>The splash screen.</p>
+		</div>
+
+		<p>The GUI had to continue to look good as well as being highly usable throughout the game so the main display was refined over several months. The refinements were based on many things including end user testing and published data from usability experts. The final GUI is shown below, at the end of a round in a three player game.</p>
+
+		<div class="center-img-caption">
+			<img src="img/bj_game.png" alt="Image: The game GUI at the end of a round" width="400" height="354" />
+			<p>The game GUI at the end of a round.</p>
+		</div>
+
+		<p>A key part of the development was around probabilities as the 'best way' to play Blackjack well is to use these. Algorithms were developed to calculate the probabilities of each action and then used to calculate an EV or Expected Value of taking each action. It was these that formed the basis of the Tutorial Mode, as seen in the screenshot below.</p>
+
+		<div class="center-img-caption">
+			<img src="img/bj_tut.png" alt="Image: he Tutorial Mode of the game" width="400" height="354" />
+			<p>The Tutorial Mode of the game, showing the probabilities and EV of <br> action on the right with the tutorial advice on the left.</p>
+		</div>
+
+		<h2>The Dissertation</h2>
+		<p>The software development was however only a part of the project. A dissertation had to be written explaining the motivations behind the project, justifying and detailing decisions and the development of the project over the year including the appropriate software engineering sections and diagrams. This resulted in a 22,000 word, 59 page report detailing the above and critically evaluating the successes and drawbacks of the project outcome.</p>
+
+		<h2>The Result</h2>
+		<p>The project and dissertation were very well received, gaining a mark just shy of 80% with excellent feedback. </p>
+		<p>Personally the project taught me many things about the software development process including time management, prioritisation of features, software engineering practices, risk managment and reduction as well as how to critically evaluate the results.</p>
+	</div>
+
+	<div id="footer">
+    <div class="container">
+        <a href="http://en-gb.facebook.com/people/Andrew-Thomas/548905067" class="sm facebook" title="Find Andrew Thomas on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="http://twitter.com/ItsMe1989" class="sm twitter" title="Find Andrew Thomas on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="http://uk.linkedin.com/pub/andrew-thomas/21/714/814/" class="sm linkedin" title="Find Andrew Thomas on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <p>&copy; Andrew Thomas 2024</p>
+    </div>
+</div>
+
+</body>
+</html>
